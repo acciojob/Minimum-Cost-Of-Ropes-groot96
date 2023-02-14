@@ -10,8 +10,9 @@ function minCostToFormRope(event) {
 		var res = Number(arr[0]) + Number(arr[1]);
 		arr.push(res);
 		cost += res;
-		arr.shift();
-		arr.shift();
+		// arr.shift();
+		// arr.shift();
+		arr.splice(0,2);
 
 		arr.sort(function (a,b) {return a-b});
 	}
